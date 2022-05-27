@@ -1,0 +1,167 @@
+@font-face {
+	font-family:captainmarvel;
+			src: url("tipo/captainmarvel.otf");
+		}
+
+
+*	 {margin: 0;
+padding: 0;
+box-sizing: border-box;}
+
+/* {}  # */
+
+
+
+body	{background-color: #000000;
+font-family: captainmarvel;
+color: #F3CB4E;}
+
+
+main {width: 1000px;
+	height: 700px;
+	background-color: #000000;
+	margin-left:auto ;
+	margin-right: auto;}
+
+#line {width: 1000px;
+	height: 3px;
+	background-color: #00007F}
+
+header {
+	width: 1000px;
+	height: 85px;
+	background-color: #000000;
+margin-top: 20px;}
+
+
+
+menu {
+	float:  right;
+	width: 500px ;
+height: 45px;
+margin-right: 10px;
+	margin-left: auto;
+	margin-top:20px;
+	margin-right: 5px;}
+
+menu a{
+    text-decoration:none;
+    font-size:15.49px;
+	align-content: right;
+	color: #F3CB4E;}
+
+menu li{
+    display:  inline-block;
+    width:30%;
+    padding:5px 10px;  
+    text-align:right;
+    color:#000000;}
+
+menu li:hover{
+    background-color:#000000;
+    color:#000;}
+
+
+
+#line2 {width: 1000px;
+	height: 3px;
+	background-color: #C11B1D}
+
+
+
+section {
+	width: 1000px;
+	height: 588px;
+	background-color: #678904;
+	position: relative;
+margin-top: 0px;}
+
+footer {
+	width: 1000px;
+	height: 40px;
+	background-color: #000000;
+	position: relative;
+	align-items: center;}
+
+
+/*agrego float para q vaya uno a la izq y 
+otro a la derecha, aclaro donde quiero q vaya...*/
+
+#article1 {
+	width: 1000px;
+	height: 588px;
+	float: back;
+	margin-top: 0px;
+	margin-left: 0px;}
+
+#article2 {
+	width: 100px;
+	height: 100px;
+	float: front;
+	margin-top: -500px;
+	margin-left: 125px;
+font-size: 20px;}
+
+
+.marvel {width: 1000px;
+	height: 22px;
+	float: left;
+	margin-left:45px;
+	margin-top: 10px ;}
+
+
+
+.uces {width: 1000px;
+	height: 22px;
+	float: left;
+	margin-left:115px ;
+	margin-top: -22px;}
+
+
+
+.jaz {width: 1000px;
+	height: 9px;
+	float: left;
+	margin-left: 700px;
+	margin-top: -15px;}
+
+
+
+.tw {width: 1000px;
+	height: 20px;
+	float: left;
+	margin-left: 870px;
+	margin-top: -20px;}
+
+
+
+.insta {width: 1000px;
+	height: 20px;
+	float: left;
+	margin-left: 919px;
+	margin-top: -20px;}
+
+
+h4 {font-size: 12px;}
+
+form	{width: 400px;
+	padding: 10px;
+	background-color: #000078;
+	margin-left:  auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 12px;
+	align-content: center;
+	font-color: #f39137;
+	line-height: 20px;
+	align-items: center;
+}
+
+
+.caja {width: 100%;}
+
+.btn {align-items: center;
+	align-content: center;
+	margin-left: auto;
+margin-right: auto;}
