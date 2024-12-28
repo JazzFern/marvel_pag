@@ -12,9 +12,12 @@ box-sizing: border-box;}
 
 
 
-body	{background-color: #000000;
+body	{background-image: url("estrellas.jpg");
 font-family: captainmarvel;
-color: #F3CB4E;}
+color: #F3CB4E;
+width: 1000px;
+margin-right: auto;
+margin-left: auto;}
 
 
 main {width: 1000px;
@@ -22,10 +25,18 @@ main {width: 1000px;
 	background-color: #000000;
 	margin-left:auto ;
 	margin-right: auto;}
+	
 
+/* Línea azul arriba de header*/
 #line {width: 1000px;
 	height: 3px;
 	background-color: #00007F}
+
+/* Línea roja abajo de header*/
+#line2 {width: 1000px;
+	height: 3px;
+	background-color: #C11B1D}
+
 
 header {
 	width: 1000px;
@@ -34,27 +45,26 @@ header {
 margin-top: 20px;}
 
 
-
 menu {
 	float:  right;
 	width: 500px ;
-height: 45px;
-margin-right: 10px;
+	height: 45px;
+	margin-right: 15px;
 	margin-left: auto;
 	margin-top:20px;
-	margin-right: 5px;}
+ align-content: center;}
 
 menu a{
-    text-decoration:none;
+    text-decoration: none;
     font-size:15.49px;
-	align-content: right;
+	align-content: center;
 	color: #F3CB4E;}
 
 menu li{
     display:  inline-block;
-    width:30%;
-    padding:5px 10px;  
-    text-align:right;
+    width: 30%;
+    padding:5px 10x;  
+    text-align:center;
     color:#000000;}
 
 menu li:hover{
@@ -62,19 +72,27 @@ menu li:hover{
     color:#000;}
 
 
-
-#line2 {width: 1000px;
-	height: 3px;
-	background-color: #C11B1D}
-
-
-
 section {
 	width: 1000px;
 	height: 588px;
-	background-color: #678904;
+	background-color: #000133;
 	position: relative;
 margin-top: 0px;}
+
+#section_index {width: 1000px;
+	height: 588px;}
+
+#section_index2 {width: 768px;
+	height: 588px;}
+
+#section_escenas {width: 1000px;
+	height: 588px;}
+
+#section_musica {width: 1000px;
+	height: 588px;}
+
+#section_personajes {width: 1000px;
+	height: 588px;}
 
 footer {
 	width: 1000px;
@@ -100,6 +118,69 @@ otro a la derecha, aclaro donde quiero q vaya...*/
 	float: front;
 	margin-top: -375px;
 	margin-left: 125px;}
+
+#article3 {
+	width: 918px;
+	height: 460px;
+	float: back;
+	margin-top: 15px;
+	margin-left: 40px;
+	margin-right: auto;
+	border: solid;
+	border-color: #000150;}
+
+#article4 {	width: 400px;
+	height: 200px;
+	margin-top: 100px;
+	margin-left: 30px;
+	margin-right: auto;
+	text-align: justify;
+	float: left;
+	color: #fff;}
+
+h2 {color: #F3CB4E}
+h5 {color: #FFF6BE}
+
+/* interna musica, playlist de Spotify */
+#article5 {
+	width: 500px;
+	height: 358px;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: 30px;
+	float: right;}
+
+#article6 {	width: 100px;
+	height: 100px;
+	margin-top: -375px;
+	margin-left: 125px;
+	float: left;}
+
+#article7 {
+	width: 1000px;
+	height: 588px;
+	float: back;
+	margin-top: 0px;
+	margin-left: 0px;
+	float: back;}
+
+#article8 {
+	width: 80px;
+	height: 30px;
+	float: front;
+	margin-top: -560px;
+	margin-left: 400px;
+	margin-right: auto;
+	font-size: 18px;}
+
+#article9 {
+	width: 100px;
+	height: 40px;
+	float: front;
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 18px;}
 
 
 .marvel {width: 1000px;
@@ -142,3 +223,554 @@ otro a la derecha, aclaro donde quiero q vaya...*/
 
 
 h4 {font-size: 12px;}
+
+#img1 {  }
+#img2 { width: 1000px;
+	height: 588px; }
+#img3 {  }
+#img4 {  }
+#img5 {  }
+#img6 {  }
+#img7 {  }
+#img8 {  }
+
+
+
+
+
+/* Esta es la parte de la galería: */
+
+
+.lightboxOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: #000200;
+  filter: progid:DXImageTransform.Microsoft.(AlphaOpacity=80);
+  opacity: 0.8;
+  display: none;
+  font-family: captainmarvel;
+}
+
+.lightbox {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+  text-align: center;
+  line-height: 0;
+  font-weight: normal;
+  outline: none;
+}
+
+.lightbox .lb-image {
+  display: block;
+  height: auto;
+  max-width: inherit;
+  max-height: none;
+  border-radius: 3px;
+
+  /* Image border */
+  border: 4px solid #870101;
+}
+
+.lightbox a img {
+  border: none;
+}
+
+.lb-outerContainer {
+  position: relative;
+  *zoom: 1;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  border-radius: 4px;
+
+  /* Background color behind image.
+     This is visible during transitions. */
+  background-color: #000450;
+}
+
+.lb-outerContainer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.lb-loader {
+  position: absolute;
+  top: 43%;
+  left: 0;
+  height: 25%;
+  width: 100%;
+  text-align: center;
+  line-height: 0;
+}
+
+.lb-cancel {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin: 0 auto;
+  background: url(../images/loading.gif) no-repeat;
+}
+
+.lb-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+}
+
+.lb-container > .nav {
+  left: 0;
+}
+
+.lb-nav a {
+  outline: none;
+  background-image: url('data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==');
+}
+
+.lb-prev, .lb-next {
+  height: 100%;
+  cursor: pointer;
+  display: block;
+}
+
+.lb-nav a.lb-prev {
+  width: 34%;
+  left: 0;
+  float: left;
+  background: url(../images/prev.png) left 48% no-repeat;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -webkit-transition: opacity 0.6s;
+  -moz-transition: opacity 0.6s;
+  -o-transition: opacity 0.6s;
+  transition: opacity 0.6s;
+}
+
+.lb-nav a.lb-prev:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+.lb-nav a.lb-next {
+  width: 64%;
+  right: 0;
+  float: right;
+  background: url(../images/next.png) right 48% no-repeat;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -webkit-transition: opacity 0.6s;
+  -moz-transition: opacity 0.6s;
+  -o-transition: opacity 0.6s;
+  transition: opacity 0.6s;
+}
+
+.lb-nav a.lb-next:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+.lb-dataContainer {
+  margin: 0 auto;
+  padding-top: 5px;
+  *zoom: 1;
+  width: 100%;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.lb-dataContainer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.lb-data {
+  padding: 0 4px;
+  color: #FFCA50;
+}
+
+.lb-data .lb-details {
+  width: 85%;
+  float: left;
+  text-align: left;
+  line-height: 1.1em;
+}
+
+.lb-data .lb-caption {
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1em;
+}
+
+.lb-data .lb-caption a {
+  color: #FFF6BE;
+}
+
+.lb-data .lb-number {
+  display: block;
+  clear: left;
+  padding-bottom: 1em;
+  font-size: 12px;
+  color: #FFF6BE;
+}
+
+.lb-data .lb-close {
+  display: block;
+  float: right;
+  width: 30px;
+  height: 30px;
+  background: url(../images/close.png) top right no-repeat;
+  text-align: right;
+  outline: none;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+  -webkit-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.lb-data .lb-close:hover {
+  cursor: pointer;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+
+
+
+/* esta es la parte del formulario */
+
+
+form	{width: 450px;
+	padding: 10px;
+	background-color: #000100;
+	opacity: 70%;
+	margin-left:  auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 11px;
+	align-content: center;
+	font-color: #f39137;
+	line-height: 10px;
+	align-items: center;
+	float: front;
+	border-radius: 10px;}
+
+
+.caja {width: 100%;
+	background-color: #870000;
+	border: solid;
+	border-width: 1px;
+	border-color: #000000;}
+
+.btn {width: 100%;
+	height: 25px;
+	background-color: #FFF6BE;
+	color: #000133;
+	align-items: center;
+	align-content: center;
+	margin-left: auto;
+margin-right: auto;
+border-style: none;
+font-family: captainmarvel;
+font-size: 11px;
+border-radius: 10px;}
+
+.opciones {width: 120px;
+	height: 25px;
+	background-color: #FFF;
+	color: #000133;
+	align-items: center;
+	align-content: center;
+	margin-left: 0px;
+	margin-right: auto;
+	border-style: none;
+	font-family: captainmarvel;
+	font-size: 10px;
+	border-radius: 5px;}
+
+
+
+
+
+
+
+/*	MQ	*/
+
+/*Small (landscape phones, 576px and up) */
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+	body {width: 576px;}
+
+	main {width: 576px;
+		height: 400px;}
+
+	#line {width: 576px;}
+	#line2 {width: 576px;}
+
+	header {width: 576px;}
+
+	menu {width: 250px;
+		margin-top: 10px;}	
+	menu a{font-size:11px;
+		align-content: center;}
+	menu li{display:  inline-block;
+    	width: 50%;
+   		padding-top: -5px;  
+    	text-align:center;}
+
+section {
+	width: 576px;
+	position: relative;
+margin-top: 0px;}
+
+#section_index {
+	width: 576px;
+	height: 341.159px;
+	position: relative;
+	margin-top: 0px;}
+
+/*Galería*/
+#section_escenas {
+	width: 576px;
+	height: 1480px;
+	position: relative;
+	margin-top: 0px;}
+
+#article3 {width: 303px;
+	height: 1375px;
+	float: back;
+	margin-top: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	border: solid;
+	border-color: #000150;}
+
+#section_musica {width: 576px;
+	height: 850px ;
+	position: relative;
+	margin-top: 0px;}
+
+/*banda sonora*/
+#article4 {	width: 400px;
+	height: 200px;
+	margin-top: 20px;
+	margin-left: 80px;
+	margin-right: auto;
+	text-align: justify;}
+
+/*Playlist de Spotify*/
+#article5 {
+	width: 500px;
+	height: 358px;
+	margin-top: 80px;
+	margin-left: -40px;}
+
+#section_personajes {width: 576px;
+	height: ;
+	position: relative;
+	margin-top: 0px;}
+
+
+footer {
+	width: 576px;
+	height: 40px;
+	position: relative;
+	align-items: center;}
+
+#img1 {width: 142.5px;
+		height: 37.05px;
+		margin-top: 10px;
+		margin-left: 80px;}
+
+#img2 {width: 576px;
+		height: 341.159px;}
+
+#img3 {width: 85px;
+	height: 85px;
+	margin-top: -300px;
+	margin-left: -50px;}
+
+.jaz {width: 576px;
+	height: 9px;
+	float: left;
+	margin-left: 276px;
+	margin-top: -15px;}
+
+.tw {width: 576px;
+	height: 20px;
+	float: left;
+	margin-left: 446px;
+	margin-top: -20px;}
+
+.insta {width: 576px;
+	height: 20px;
+	float: left;
+	margin-left: 495px;
+	margin-top: -20px;}
+
+#article8 {
+	width: 80px;
+	height: 30px;
+	float: front;
+	margin-top: -560px;
+	margin-left: 200px;
+	margin-right: auto;
+	font-size: 18px;}
+
+#img8	{margin-top: 120px;
+ width: 576px;
+	filter: blur(2px);
+filter: sepia(50%);}
+ }
+
+/*Medium  (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991px){ 
+ 
+body {width: 768px;}
+
+main {width: 768px;}
+
+#line {width: 768px;}
+#line2 {width: 768px;}
+
+	header {width: 768px;}
+
+	menu {width: 384px;
+		margin-top: 10px;}	
+	menu a{font-size:14px;
+		align-content: center;}
+	menu li{display:  inline-block;
+    	width: 60%;
+   		padding-top: 5px 10px;  
+    	text-align:center;}
+
+section {width: 768px;
+	height: 600px;
+	position: relative;
+margin-top: 0px;}
+
+#section_index {width: 768px;
+	height: 450px;
+	position: relative;
+margin-top: 0px;}
+
+
+/*Galería*/
+#section_escenas {
+	width: 768px;
+	height: 800px;
+	position: relative;
+	margin-top: 0px;}
+
+#article3 {width: 610px;
+	height: 690px;
+	float: back;
+	margin-top: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	border: solid;
+	border-color: #000150;}
+
+#section_musica {width: 768px;
+	height: 550px ;
+	position: relative;
+	margin-top: 0px;}
+
+/*banda sonora*/
+#article4 {	width: 400px;
+	height: 200px;
+	margin-top: 00px;
+	margin-left: 30px;
+	margin-right: auto;
+	text-align: justify;
+float: left;}
+
+/*Playlist de Spotify*/
+#article5 {
+	width: 300px;
+	height: 358px;
+	margin-top: 10px;
+	margin-right: 20px;
+float: right;}
+
+#section_personajes {width: 768px;
+	height: 500px;
+	position: relative;
+	margin-top: 0px;}
+
+#img8	{margin-top: 120px;
+ width: 768px;
+	filter: blur(2px);
+filter: sepia(50%);}
+
+#article8 {
+	width: 80px;
+	height: 30px;
+	float: front;
+	margin-top: -560px;
+	margin-left: 300px;
+	margin-right: auto;
+	font-size: 18px;}
+
+footer {
+	width: 768px;
+	height: 40px;
+	position: relative;
+	align-items: center;}
+
+#img1 {width: 195px;
+		height: 50.7px;
+		margin-top: 10px;
+		margin-left: 80px;}
+
+#img2 {width: 768px;
+		height: 451.584px;}
+
+#img3 {width: 85px;
+	height: 85px;
+	margin-top: -300px;
+	margin-left: -50px;}
+
+.jaz {width: 768px;
+	height: 9px;
+	float: left;
+	margin-left: 468px;
+	margin-top: -15px;}
+
+.tw {width: 768px;
+	height: 20px;
+	float: left;
+	margin-left: 638px;
+	margin-top: -20px;}
+
+.insta {width: 768px;
+	height: 20px;
+	float: left;
+	margin-left: 687px;
+	margin-top: -20px;}
+}
+
+/*Large  (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199px) { 
+ 
+	body {width: 992px;}
+		
+
+	main {width: 992px;}
+
+
+/* X-Large  (large desktops, 1200px and up)*/
+@media (min-width: 1200px) and (max-width: 1399px) {
+ 
+  }
